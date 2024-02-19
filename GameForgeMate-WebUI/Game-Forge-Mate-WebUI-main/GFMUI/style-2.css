@@ -1,0 +1,401 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body
+{
+    margin:40px;
+    min-height: 100%;
+    background: linear-gradient(-45deg, #f382ea, #d852d1, #7830a1, #69339c, #6425ca, #5d03d3);
+	background-size: 500% 600%;
+	animation: gradient 15s ease infinite;
+	height: 100vh;
+}
+
+header
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 30px 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .logo
+{
+    color: #fff;
+    font-weight: 700;
+    text-decoration: none;
+    font-size: 1.5em;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+header .logo img {
+    margin-right: 10px;
+    color: #fff;
+    vertical-align: middle;
+    width: 45px; /* İstediğiniz genişliği belirleyin */
+    height: auto; /* Genişlik oranına göre otomatik yükseklik ayarı */
+}
+
+header ul
+{
+  display: flex;
+  justify-content: center;
+  align-items: center;  
+}
+
+header ul li
+{
+    list-style: none;
+    margin-left: 20px;
+}
+
+header ul li a
+{
+    text-decoration: none;
+    padding: 6px 15px;
+    color:#fff;
+    border-radius: 20px;
+}
+
+header ul li a:hover, 
+header ul li a:active
+{
+    background: #fff;
+    color: #2b1055;
+}
+
+section
+{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    padding: 100px;
+    justify-content: left;
+    margin-top: 150px;
+}
+
+section h1{
+    margin-top: 0;
+}
+
+#text
+{
+    position: absolute;
+    color: #fff;
+    white-space: nowrap;
+    font-size: 3rem;
+    z-index: 9;
+    margin-bottom: 0;
+    max-width: 3em;
+}
+
+
+.circle {
+    border-radius: 50%;
+    width: 120px;
+    height: 120px;
+}
+
+.container {
+    display: flex;
+    justify-content: space-around; /* Değişiklik: space-between'den space-around'a */
+    align-items: center;
+    margin-top: 15%;
+}
+.title-container {
+    text-align: center;
+    margin-bottom: 60px;
+    margin-top: 60px;
+}
+
+.title-container h1 {
+    font-size: 3rem; /* Font boyutunu ayarlayın */
+    font-weight: 700; 
+    color: #3498db; 
+    margin-bottom: 10px;
+    text-transform: uppercase; 
+    letter-spacing: 2px; 
+}
+
+
+.item {
+    text-align: center;
+    color: white;
+    font-weight: 500;
+}
+
+.img-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: auto; /* veya istediğiniz genişlik oranını ayarlayabilirsiniz */
+    height: auto; /* Otomatik yükseklik ayarı */
+    /*margin: 0 10px; /* Ortadaki ikondan haricindeki ikonlara sağ ve sol kenarlarda 10 piksel boşluk ekle */
+}
+
+.caption {
+    overflow-wrap: break-word;
+    max-width: 20em; /* Satır başına kelime sınırı 8 */
+    margin-top: 10px; /* Görsel ile metin arasına biraz boşluk ekle */
+}
+
+
+.card-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin: 20px;
+  }
+
+.card {
+    width: calc(33.33% - 130px); /* 20px'lik bir boşluk bırakarak üç kartı sığdırır */
+    margin-bottom: 20px;
+    height: 500px;
+    border-radius: 20px;
+    padding: 5px;
+    /*box-shadow: rgba(151, 65, 252, 0.2) 0 15px 30px -5px;*/
+    background-image: linear-gradient(144deg,#AF40FF, #5B42F3 50%,#00DDEB);
+    opacity: 1;
+    position: relative;
+    text-align: center;
+  }
+
+  .card img {
+    width: 250px;
+    height: 320px;
+    margin-top: 3%;
+    object-fit: cover; /* Görsel içindeki boşlukları doldurur */
+    border-radius: 20px; /* Kartın köşeleriyle uyumlu yapar */
+    }
+
+    .card a {
+        position: absolute;
+        bottom: 20px;
+        right: 20px;
+        display: inline-block;
+        padding: 10px 20px;
+        background-color: #30145c;
+        color: #804cbb;
+        text-decoration: none;
+        border-radius: 20px;
+        transition: background-color 0.3s ease-in-out;
+    }
+    
+    .card a:hover {
+        background-color: #9765d1;
+    }
+    
+    .card a.active {
+        background-color: #ffffff; /* Butona tıklandığında aktif olacak rengi belirtin */
+        color: #6574cd; /* Aktif durumdayken metin rengi */
+    }   
+
+
+
+  .card__content {
+    background: rgb(5, 6, 45);
+    border-radius: 17px;
+    width: 100%;
+    height: 100%;
+  }
+
+  .game-Info
+  {
+      text-align: center;
+  }
+
+  .game-Info p
+  {
+    margin-top: 2%;
+    color: #fff;
+    font-size: 0.8rem;
+    font-weight: 400;
+  }
+  .game-Info h2
+  {
+    color: white; 
+    font-size: 1.4rem; 
+    font-weight: 600;
+  }
+
+  .price
+  {
+    margin-top: 3%;
+    color: white; 
+    font-size: 1.2rem; 
+    font-weight: 500;
+  }
+
+  .card:hover .card__content img {
+    transform: translateY(-5px) scale(1.1);
+    transition: transform 0.3s ease; /* Kalkma ve büyütme efekti için geçiş süresi ve hareket eğrisi */
+}
+
+.card:not(:hover) .card__content img {
+    transform: none; /* :hover durumu dışındaki durum için başlangıç konumuna dönme */
+}
+
+.card .card__content img {
+    transition: transform 0.3s ease; /* Başlangıç durumu için geçiş süresi ve hareket eğrisi */
+}
+
+.card1 {
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 65%;
+    width: 50%;
+    border-radius: 8px;
+    overflow: hidden;
+    background: none; /* Arka plan rengini temizliyoruz */
+}
+
+.card1::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.2); /* Arka planın saydamlığını buradan kontrol edebilirsiniz */
+    z-index: -1;
+}
+
+.card1 > * {
+    z-index: 1; /* İçerikleri z-index ile üste getiriyoruz */
+}
+
+
+
+/* Sol tarafta seçtiğiniz oyunlar */
+.card1 .selected-games {
+    text-align: left;
+}
+
+.card1 .selected-games h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+.card1 .selected-games ul {
+    
+    list-style-type: none;
+    padding: 0;
+}
+
+.card1 .selected-games li {
+    font-size: 1.1rem;
+    margin-bottom: 5px;
+}
+
+/* Diğer tarafta linkler */
+.card1 .recommended-systems {
+    text-align: right;
+}
+
+.card1 .recommended-systems h3 {
+    font-size: 1.4rem;
+    text-align: center;
+}
+
+.card1 .recommended-systems ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.card1 .recommended-systems li {
+    margin-bottom: 5px;
+}
+
+.card1 a {
+    text-decoration: none;
+    color: #3498db;
+}
+
+.card1 a:hover {
+    text-decoration: underline;
+}
+
+
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+
+.searchBox {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform:  translate(-50%,50%);
+    background: #ffffff;
+    height: 40px;
+    border-radius: 40px;
+    padding: 10px;
+
+}
+
+.searchBox:hover > .searchInput {
+    width: 240px;
+    padding: 0 6px;
+}
+
+.searchBox:hover > .searchButton {
+  background: white;
+  color : #ffffff;
+}
+
+.searchButton {
+    color: white;
+    float: right;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.4s;
+}
+
+.searchInput {
+    border:none;
+    background: none;
+    outline:none;
+    float:left;
+    padding: 0;
+    color: white;
+    font-size: 16px;
+    transition: 0.4s;
+    line-height: 40px;
+    width: 0px;
+
+}
+
+@media screen and (max-width: 620px) {
+.searchBox:hover > .searchInput {
+    width: 150px;
+    padding: 0 6px;
+}
+}

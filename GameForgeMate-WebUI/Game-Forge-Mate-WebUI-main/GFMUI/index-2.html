@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GameForgeMate</title>
+    <link rel="stylesheet" href="style-2.css">
+    <script src="script.js"></script>
+</head>
+<body>
+    <div class="gradient"></div>
+    <header>
+        <a href="#" class="logo"><img src="images/crop_image.png">Game Forge Mate</a>
+        <ul>
+            <li><a href="#" class="active">Home</a></li>
+            <li><a href="#Games">Games</a></li>
+            <li><a href="#Guide">Guide</a></li>
+           
+            
+
+
+
+        </ul>
+    </header>
+
+    <section>
+        <h1 id="text">We Recommend Your Dream Setup</h1>
+    </section>
+    
+    
+
+    <h1></h1>
+
+    <div class="card1">
+        <div class="selected-games">
+            <h3>Selected Games</h3>
+            <ul style="text-align: center;" id="selectedGamesList">
+                <li>Oyun 1</li>
+                <li>Oyun 2</li>
+                <li>Oyun 3</li>
+                <li>Oyun 4</li>
+                <li>Oyun 5</li>
+                <li>Oyun 6</li>
+                <!-- Diğer oyunlar -->
+            </ul>
+
+        </div>
+        <div class="recommended-systems">
+            <h3>Recommended</h3>
+            <h3 style="margin-bottom: 17px;"> System & Components</h3>
+            <ul style="text-align: center;">
+                <li><a href="{{ value }}">Sinerji</a></li>
+                <li><a href="#">Cimri</a></li>
+                <li><a href="#">Hepsiburada</a></li>
+                <li><a href="#">GamingGen</a></li>
+                <li><a href="#">GameGaraj</a></li>
+                <li><a href="#">Akakçe</a></li>
+                <!-- Diğer sistemler -->
+            </ul>
+        </div>
+    </div>
+
+    <div id="Guide" class="container">
+        <div class="item">
+            <div class="img-container">
+                <img src="images/christmaspepe.gif" class="circle" alt="Pepe 1">
+            </div>
+            <h2 class="title">Choose Your Game</h2>
+            <p class="caption">You can choose the games you want to play from the cards below. Just click on the star next to the cards!</p>
+        </div>
+        <div class="item">
+            <div class="img-container">
+                <img src="images/duunen-pepe.gif" class="circle" alt="Pepe 2">
+            </div>
+            <h2 class="title">Search Games</h2>
+            <p class="caption">Are there any games you want to play on the cards below? At the time, you can add the games you want from the search section mentioned above!</p>
+        </div>
+        <div class="item">
+            <div class="img-container">
+                <img src="images/happy-clap.gif" class="circle" alt="Pepe 3">
+            </div>
+            <h2 class="title">Confirm and Wait</h2>
+            <p class="caption">Finally, after selecting the games, just click on the "Confirm" button above.Then you can wait for the gaming computer you want.</p>
+        </div>
+    </div>
+
+    <div id="showCardsInfo"></div>
+
+
+
+    <div class="title-container">
+        <h1 style="color: white;" class="title">Games</h1>
+    </div>
+    <div id="Games" class="card-container">
+        <!-- Kart 1 -->
+        <!-- Kart 1 -->
+<div class="card" onclick="toggleCardSelection(this)">
+    <div class="card__content">
+        <img src="images/Cyberpunk_2077_box_art.jpg" alt="Cyberpunk 2077">
+        <div class="game-Info">
+            <h2 class="gameInfo">Cyberpunk 2077</h2>
+            <p class="gameInfo">Highly anticipated open-world role-playing game set in a dystopian future.</p>
+            <div class="price">$44.99</div>
+        </div>
+        <a class="round-button">⭐</a>
+    </div>
+</div>
+
+<!-- Kart 2 -->
+<div class="card" onclick="toggleCardSelection(this)">
+    <div class="card__content">
+        <img src="images/Grand_Theft_Auto_V.png" alt="Grand Theft Auto 5">
+        <div class="game-Info">
+            <h2 class="gameInfo">Grand Theft Auto 5</h2>
+            <p class="gameInfo">Action-packed open-world game with an immersive storyline and dynamic gameplay.</p>
+            <div class="price">$39.99</div>
+        </div>
+        <a class="round-button">⭐</a>
+    </div>
+</div>
+
+<!-- Kart 3 -->
+<div class="card" onclick="toggleCardSelection(this)">
+    <div class="card__content">
+        <img src="images/spiderman.jpeg" alt="Marvel's Spiderman Remastered">
+        <div class="game-Info">
+            <h2 class="gameInfo">Marvel's Spiderman Remastered</h2>
+            <p class="gameInfo">Swing through the city as Spider-Man in this enhanced and remastered version of the classic game.</p>
+            <div class="price">$29.99</div>
+        </div>
+        <a class="round-button">⭐</a>
+    </div>
+</div>
+
+<!-- Kart 4 -->
+<div class="card" onclick="toggleCardSelection(this)">
+    <div class="card__content">
+        <img src="images/god_of_War.jpeg" alt="God of War">
+        <div class="game-Info">
+            <h2 class="gameInfo">God of War</h2>
+            <p class="gameInfo">Embark on an epic journey with Kratos in this action-packed adventure filled with gods and monsters.</p>
+            <div class="price">$49.99</div>
+        </div>
+        <a class="round-button">⭐</a>
+    </div>
+</div>
+
+<!-- Kart 5 -->
+<div class="card" onclick="toggleCardSelection(this)">
+    <div class="card__content">
+        <img src="images/fifa.jpg" alt="Fifa 23">
+        <div class="game-Info">
+            <h2 class="gameInfo">Fifa 23</h2>
+            <p class="gameInfo">Experience the excitement of football with realistic gameplay and stunning graphics in the latest FIFA installment.</p>
+            <div class="price">$69.99</div>
+        </div>
+        <a class="round-button">⭐</a>
+    </div>
+</div>
+
+<!-- Kart 6 -->
+<div class="card" onclick="toggleCardSelection(this)">
+    <div class="card__content">
+        <img src="images/fortnite image.jpeg" alt="Fortnite">
+        <div class="game-Info">
+            <h2 class="gameInfo">Fortnite</h2>
+            <p class="gameInfo">Join the battle, build structures, and outlast your opponents in this popular battle royale game.</p>
+            <div class="price">Free</div>
+        </div>
+        <a class="round-button">⭐</a>
+    </div>
+</div>
+
+<!-- Kart 7 -->
+<div class="card" onclick="toggleCardSelection(this)">
+    <div class="card__content">
+        <img src="images/Valorant.jpeg" alt="Valorant">
+        <div class="game-Info">
+            <h2 class="gameInfo">Valorant</h2>
+            <p class="gameInfo">Engage in tactical shooter gameplay with unique characters and abilities in this competitive FPS.</p>
+            <div class="price">Free</div>
+        </div>
+        <a class="round-button">⭐</a>
+    </div>
+</div>
+
+<!-- Kart 8 -->
+<div class="card" onclick="toggleCardSelection(this)">
+    <div class="card__content">
+        <img src="images/hogwarts_legacy.jpeg" alt="Hogwarts Legacy">
+        <div class="game-Info">
+            <h2 class="gameInfo">Hogwarts Legacy</h2>
+            <p class="gameInfo">Immerse yourself in the magical world of Harry Potter with this upcoming open-world RPG set in the wizarding universe.</p>
+            <div class="price">$59.99</div>
+        </div>
+        <a class="round-button">⭐</a>
+    </div>
+</div>
+
+
+        <div class="card" onclick="toggleCardSelection(this)">
+            <div class="card__content">
+                <img src="images/palworld_xwr4.jpg" alt="">
+                <div class="game-Info">
+                    <h2 class="gameInfo">Palworld</h2>
+                    <p class="gameInfo">Explore the enchanting world of Palworld, an open-world RPG where you befriend mystical creatures called Pals. Build your haven, embark on adventures, and nurture your Pal companions.</p>
+                    <div class="price">$14.99</div>
+                </div>
+                <a class="round-button">⭐</a>
+            </div>
+        </div>
+    </div>
+
+    </div>
+
+    
+    
+</body>
+</html>
